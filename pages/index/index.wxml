@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class='container'>
+  <view class='card b-shadow'>
+    <view class='card-content'>
+      <image mode="widthFix"  src='{{tempImage}}'></image> 
+    </view>
+    <view class='carDesc carDesc1'>
+      <text>泡沫小飞机</text>
+      <button class='share' id="shareBtn" open-type="share" type="primary" hover-class="other-button-hover">
+        <image id="shareImg" src='../../images/kanjia_64.png'></image>
+        邀请好友砍价
+      </button>
+    </view>
+    <view class='carDesc carDesc2'>
+      <text>{{tempTitle}}</text>
+      <button  class='bg-c' type="primary" hover-class="other-button-hover" bindtap='chooseimage'>
+      设置邀请封面</button>
+    </view>
+  </view> 
+</view>
+<modal hidden="{{hiddenmodalput}}" title="请输入验证码" confirm-text="提交" cancel-text="重置" bindcancel="cancel" bindconfirm="confirm">  
+    <input type='text'placeholder="请输入内容" auto-focus/>  
+</modal> 
