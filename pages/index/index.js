@@ -19,7 +19,7 @@ Page({
             console.log(ops.target)
         }
         return {
-            title: tempTitle,
+            title: this.data.tempTitle,
             imageUrl: this.data.tempImage,
             path: 'pages/index/index',
             success: function (res) {
@@ -65,8 +65,16 @@ Page({
     },
     //确认  
     confirm: function () {
+        console.log('tempTitle:' + this.data.tempTitle)
         this.setData({
             hiddenmodalput: true
         })
-    }  
+    },
+    bindTextAreaBlur: function (e) {
+        console.log(e.detail.value)
+        this.setData({
+            tempTitle: e.detail.value
+        })
+        console.log('tempTitle:' + this.data.tempTitle)
+    }
 })
