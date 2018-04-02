@@ -1,2 +1,6 @@
 <!--pages/record/record.wxml-->
-<text>pages/record/record.wxml</text>
+<view>
+    <button bindtap='share'>
+        转发
+    </button>
+</view>

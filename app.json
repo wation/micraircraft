@@ -1,10 +1,10 @@
 {
     "pages": [
+        "pages/me/me",
         "pages/home/home",
         "pages/index/index",
         "pages/logs/logs",
-        "pages/record/record",
-        "pages/me/me"
+        "pages/record/record"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -19,7 +19,7 @@
         "backgroundColor": "#ffffff",
         "list": [
             {
-                "pagePath": "pages/index/index",
+                "pagePath": "pages/home/home",
                 "iconPath": "images/normal/首页.png",
                 "selectedIconPath": "images/hover/首页.png",
                 "text": "首页"

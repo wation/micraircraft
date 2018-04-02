@@ -5,7 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+      objectImg: '../../images/xiaofeiji.png',
+      objectName:'泡沫小飞机',
+      rawPrice:15,
+      currentPrice:5,
+      logisticsPrice:1,
+      friendImgs:[
+            
+      ],
+      realPrice:6
   },
 
   /**

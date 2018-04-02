@@ -33,6 +33,34 @@ App({
       }
     })
   },
+  onShow: function(options) {
+      if (options.shareTickets) {
+          // 获取转发详细信息
+          var s = wx.getShareInfo({
+              shareTicket: options.shareTickets[0],
+              success(options) {
+                  options.errMsg; // 错误信息
+                  options.encryptedData;  //  解密后为一个 JSON 结构（openGId    群对当前小程序的唯一 ID）
+                  options.iv; // 加密算法的初始向量
+                  console.log("success");
+                  console.log(options);
+              },
+              fail() { 
+                  console.log("fail");
+              },
+              complete() { 
+                  console.log("fail");
+              }
+          });
+      }
+      // console.log('s=>' + s)
+      console.log('options=>')
+      console.log(options)
+      if (options.scene == 1044) {
+          console.log('shareTicket=>')
+          console.log(options.shareTicket)
+      }
+  },
   globalData: {
     userInfo: null
   }

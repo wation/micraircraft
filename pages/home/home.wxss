@@ -71,6 +71,7 @@
     float: right;
     top: 40rpx;
     right:40rpx;
+    display:none;
 }
 
 .t4 {
