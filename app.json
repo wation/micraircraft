@@ -1,10 +1,15 @@
 {
     "pages": [
+        "pages/record/record",
         "pages/me/me",
         "pages/home/home",
         "pages/index/index",
         "pages/logs/logs",
-        "pages/record/record"
+        "pages/user/index",
+        "pages/address/index",
+    "pages/address/addto/index",
+        "pages/order/index",
+        "pages/userdata/index"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -31,7 +36,7 @@
                 "text": "详情"
             },
             {
-                "pagePath": "pages/me/me",
+                "pagePath": "pages/user/index",
                 "iconPath": "images/normal/用户.png",
                 "selectedIconPath": "images/hover/用户.png",
                 "text": "我的"

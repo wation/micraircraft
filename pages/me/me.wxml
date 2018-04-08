@@ -1,4 +1,14 @@
 <!--pages/me/me.wxml-->
+<view class="user-head">
+    <view class="center" bindtap = "userdata">
+        <view class="user-img">
+            <image src="{{userInfo.avatarUrl}}"/>
+        </view>
+        <view class="user-text">
+            <text class="text">{{userInfo.nickName}}</text>
+        </view>
+    </view>
+</view>
 <view>
     <view class='item vObject'>
         <image class='objectImg' src='{{objectImg}}'></image>
