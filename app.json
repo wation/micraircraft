@@ -7,9 +7,12 @@
         "pages/logs/logs",
         "pages/user/index",
         "pages/address/index",
-    "pages/address/addto/index",
+        "pages/address/addto/index",
         "pages/order/index",
-        "pages/userdata/index"
+        "pages/userdata/index",
+        "pages/rules/rules",
+        "pages/friends/friends",
+        "pages/detail/detail"
     ],
     "window": {
         "backgroundTextStyle": "light",

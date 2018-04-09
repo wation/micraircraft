@@ -7,7 +7,7 @@ Page({
   data: {
       tempImage:'/images/xiaofeiji.png',
       srcUser:'wation',
-      content:'每个孩子都有一个\n飞翔的梦想!\n你真的懂了吗？',
+      content:'每个孩子\n都有一个飞翔的梦想!\n你真的懂了吗？',
       money:1.5,
       waitTime:5
   },

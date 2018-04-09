@@ -153,5 +153,18 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  showItry: function() {
+      wx.navigateTo({ url: "/pages/index/index" })
+  },
+  showFriends: function () {
+      wx.navigateTo({ url: "/pages/friends/friends" })
+  },
+  showRules: function () {
+      wx.navigateTo({ url: "/pages/rules/rules" })
+  },
+  showDetail: function () {
+      wx.navigateTo({ url: "/pages/detail/detail" })
   }
+
 })

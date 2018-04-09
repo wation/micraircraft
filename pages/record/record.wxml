@@ -11,9 +11,9 @@
     <view class='v2'>
         <canvas canvas-id="pieCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
         <view class='v3'>
-            <button class="button">好友名单</button>
-            <button class="button">活动细则</button>
-            <button type="primary" class='button itry' bindtap='switchTab'>我要买，邀请好友减钱 </button>
+            <button class="button" bindtap='showFriends'>好友名单</button>
+            <button class="button" bindtap='showRules'>活动细则</button>
+            <button type="primary" class='button itry' bindtap='showItry'>我要买，邀请好友减钱 </button>
         </view>
     </view>
 </view>
@@ -22,5 +22,5 @@
         <text class='currentPrice'>现价:{{currentPrice}}元</text>
         <text class='rawPrice'>{{rawPrice}}元</text>
     </view>
-    <button class="buttonDetail">商品详情</button>
+    <button class="buttonDetail" bindtap='showDetail'>商品详情</button>
 </view>

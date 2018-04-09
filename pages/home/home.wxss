@@ -1,21 +1,20 @@
 /* pages/home/home.wxss */
 .container {
-    position: absolute;
+    height: 100%;
     width: 100%;
-    /* background-color:bisque; */
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
 }
 .card-title {
     width: 100%;
-    height: 40%;
+    height: 480rpx;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color:beige; */
+     background-color:beige; 
 }
 
 .img {
-    position: absolute;
-    top: 0rpx;
-    left: 0rpx;
     width: 100%;
 }
 .v {
@@ -23,9 +22,11 @@
 }
 
 .v0 {
-    position: fixed;
-    top:50%;
-    width: 90%;
+     padding-top: 30rpx;
+     padding-left: 30rpx;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
 }
 .v1 {
      /* background-color:aqua;  */
@@ -38,9 +39,17 @@
 
 .v3 {
     /* background-color:aqua; */
-    position: absolute;
-    bottom:40rpx;
+    height: 80rpx;
+    width: 100%;
+    bottom:10rpx;
+     margin-bottom: 20rpx;
     color:gray;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:flex-end;
+    box-sizing: border-box;
 }
 .desc {
     text-align: left;
@@ -59,31 +68,10 @@
 }
 .t2 {
     color:deeppink;
-    font-size:60rpx;
+    font-size:50rpx;
+    font-weight:bold;
 }
 
 .content {
     font-family:"楷体","楷体_GB2312";
-}
-
-.wait {
-    position: absolute;
-    float: right;
-    top: 40rpx;
-    right:40rpx;
-    display:none;
-}
-
-.t4 {
-    position: relative;
-    letter-spacing: 5rpx;
-    font-size: 36rpx;
-}
-.pass {
-    position: relative;
-    background: none;
-    plain:true;
-    width:200rpx;
-    padding-left:10rpx;
-    padding-right:10rpx;
 }
