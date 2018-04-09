@@ -1,9 +1,9 @@
 {
     "pages": [
-        "pages/record/record",
-        "pages/me/me",
         "pages/home/home",
         "pages/index/index",
+        "pages/record/record",
+        "pages/me/me",
         "pages/logs/logs",
         "pages/user/index",
         "pages/address/index",

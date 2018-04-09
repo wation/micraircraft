@@ -28,6 +28,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+      this.getFields();
       this.setData({
           topScroll: [
               { "id": "35", "Pic": '/images/xiaofeiji.png'},
@@ -43,18 +44,61 @@ Page({
   
   },
 
+  getFields: function () {
+    //   console.log("getFields")
+    //   var _this = this;
+    //   //创建节点选择器
+    //   var query = wx.createSelectorQuery();
+    //   //选择id
+    //   query.select('#pieCanvas').boundingClientRect()
+    //   query.exec(function (res) {
+    //       //res就是 该元素的信息 数组
+    //       console.log(res);
+    //       //取高度
+    //       _this.setData({
+    //           currentPrice: res[0].height
+    //       })
+    //       console.log('取高度', _this.data.currentPrice);
+    //   })
+
+    //   var that = this
+    //     var query = wx.createSelectorQuery()
+    //     query.select('#pieCanvas').boundingClientRect()
+    //     query.exec(function (res) {
+    //         console.log("1" + res)       // #the-id节点的上边界坐
+    //         that.setData({
+    //             canvasHeight: res.height
+    //         });
+    //     })
+    },
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    //   console.log('canvasHeight:' + this.data.canvasHeight);
 
       var windowWidth = 320;
+      var windowHeight = 640;
       try {
           var res = wx.getSystemInfoSync();
+
+        //   console.log(res.model)
+        //   console.log(res.pixelRatio)
+        //   console.log(res.screenWidth)
+        //   console.log(res.screenHeight)
+        //   console.log(res.windowWidth)
+        //   console.log(res.windowHeight)
+        //   console.log(res.language)
+        //   console.log(res.version)
+        //   console.log(res.platform)
           windowWidth = res.windowWidth;
+          windowHeight = res.windowHeight;
       } catch (e) {
           console.error('getSystemInfoSync failed!');
       }
+      console.log('windowHeight:' + windowHeight);
+      var canvasHeight = windowHeight - ((480 + 76 + 10) * (windowWidth / 750));
+      console.log('canvasHeight:' + canvasHeight);
       pieChart = new wxCharts({
           animation: true,
           canvasId: 'pieCanvas',
@@ -70,7 +114,7 @@ Page({
               data: 3,
           }],
           width: windowWidth,
-          height: 260,
+          height: canvasHeight,
           dataLabel: true,
       });
   
