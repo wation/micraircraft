@@ -5,14 +5,34 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+      pic: [
+          '/images/detail/s1.jpg',
+          '/images/detail/s2.jpg',
+          '/images/detail/s3.jpg',
+          '/images/detail/s4.jpg',
+          '/images/detail/s5.jpg',
+          '/images/detail/s6.jpg',
+          '/images/detail/s7.jpg',
+          '/images/detail/s8.jpg',
+          '/images/detail/s9.jpg'
+      ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    //   pic = [
+    //       '/images/detail/s1.jpg',
+    //       '/images/detail/s2.jpg',
+    //       '/images/detail/s3.jpg',
+    //       '/images/detail/s4.jpg',
+    //       '/images/detail/s5.jpg',
+    //       '/images/detail/s6.jpg',
+    //       '/images/detail/s7.jpg',
+    //       '/images/detail/s8.jpg',
+    //       '/images/detail/s9.jpg'
+    //   ];
   },
 
   /**
